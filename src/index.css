@@ -1,0 +1,36 @@
+/* ./src/index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
+h1{
+  font-size: 1.172em;
+}
+h2{
+  font-size: 1.348em;
+}
+h3{
+  font-size: 1.545em;
+}
+
+h4{
+  font-size: 1.600em;
+}
+
+h5{
+  font-size: 1.833em;
+}
+h6{
+  font-size: 1.077em;
+}
+
+p{
+  font-size: 1.625em;
+}
