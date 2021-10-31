@@ -80,10 +80,10 @@ export default function Home() {
             aenean tincidant pretium quam id. Massa
           </p>
           <div className="flex flex-col mt-6">
-            <button className="bg-Primary text-white text-sm p-5">
+            <button className="bg-Primary text-white text-base p-5">
               CONTACT ME
             </button>
-            <button className="p-5 border  text-white text-sm mt-3">
+            <button className="p-5 border  text-white text-base mt-3">
               CASE RESULTS
             </button>
           </div>
@@ -124,7 +124,7 @@ export default function Home() {
             {data.map((item, i) => (
               <div key={i} className="border-b border-opacity-40 pb-12 ">
                 <img className="mb-8" src={item.logo} alt="logo" />
-                <h1 className="text-white tracking-wide text-lg">
+                <h1 className="text-white tracking-widest text-lg">
                   {item.title}
                 </h1>
                 <p className="text-base mt-2 text-white tracking-wider opacity-80">
@@ -162,7 +162,9 @@ export default function Home() {
                 <p className="text-lg text-black opacity-80 tracking-widest">
                   JOHN CARTER
                 </p>
-                <p className="text-sm tracking-widest text-Primary">FOUNDER OF LAWYER</p>
+                <p className="text-sm tracking-widest text-Primary">
+                  FOUNDER OF LAWYER
+                </p>
               </div>
             </div>
             <div className="mt-10 img-overlay relative z-10">
@@ -177,13 +179,14 @@ export default function Home() {
         </div>
         {/* about area section end */}
         {/* free consultation area section starting */}
-        <div className="px-3 mt-8 pb-20">
+        <div className="px-3 pt-6 mt-8 pb-20">
           <h1
-            className="text-2xl  py-4 pb-5 text-white opacity-95"
+            className="text-2xl relative  py-4 pb-5 text-white opacity-95"
             style={{ fontFamily: "Playfair Display" }}
           >
             {" "}
             Get a Free Consultation
+            <div className="absolute top-0 bg-Primary w-24 h-0.5"></div>
           </h1>
           <p className="text-base w-11/12 text-white opacity-70">
             {" "}
@@ -204,7 +207,7 @@ export default function Home() {
         {/* case results section start */}
         <div className="bg-white px-3 pt-6">
           <div className="pb-10">
-            <p className="text-xl carter ml-10  relative text-Neutral-800 mt-14 tracking-widest">
+            <p className="text-lg carter ml-10  relative text-Neutral-800 mt-14 tracking-widest">
               CASE RESULTS
             </p>
             <h1
@@ -213,27 +216,30 @@ export default function Home() {
             >
               Great past results for our clients
             </h1>
-            <button className="border w-full border-gray-700 text-sm p-4">
+            <button className="border w-full tracking-wider border-gray-700 text-base p-5">
               BROWSE CASE RESULTS
             </button>
           </div>
-          <div>
+          <div className="pb-8">
             {data2.map((item) => (
               <div key={Math.random() * 100}>
                 <img src="/assets/img2.jpg" alt="logo" />
-                <div className="px-3 pb-8 mb-8 pt-4 shadow-lg -top-10 bg-white relative z-10 w-11/12">
+                <div
+                  style={{ width: "97%" }}
+                  className="px-3 pb-8 mb-4 pt-4 shadow-2xl -top-10 bg-white relative z-10 "
+                >
                   <p className="text-lg carter ml-10  relative text-Primary tracking-widest">
                     $46,000,000
                   </p>
-                  <h1 className="text-xl py-2 text-Neutral-800">
+                  <h1 className="text-lg py-3 text-Neutral-800">
                     CORPORATE & COMPLIANCE
                   </h1>
-                  <p className="text-lg opacity-80">
+                  <p className="text-base opacity-70">
                     Lorem ipsum dolor sit amet,cmsectectur asipsicing elit,
                     Purus gravida in ipsu in quia Metus ametet risus platea
                   </p>
 
-                  <button className="mt-4 border-gray-800 pb-1 text-sm text-black opacity-80 border-b-2">
+                  <button className="mt-4 tracking-wider border-gray-800 pb-1 text-base text-black opacity-90 border-b">
                     READ MORE
                   </button>
                 </div>
@@ -244,18 +250,18 @@ export default function Home() {
         {/* end of caestudies */}
 
         {/* start of resources */}
-        <div className="px-3 pb-20">
+        <div className="px-3 pt-20 pb-20">
           <div>
-            <p className="text-xl carter ml-10  relative text-white opacity-80 mt-14 tracking-widest">
+            <h3 className="text-lg carter ml-10  relative text-white opacity-80 tracking-widest">
               RESOURCES
-            </p>
+            </h3>
             <h1
-              className="text-2xl  py-4 pb-5 text-white"
+              className="text-2xl  py-4 text-white"
               style={{ fontFamily: "Playfair Display" }}
             >
               Browse our Resource Center
             </h1>
-            <button className="w-full p-4 text-sm border border-gray-100 text-white opacity-80">
+            <button className="w-full p-5 text-base border border-gray-100 text-white opacity-80">
               ALL ARTICLES
             </button>
           </div>
@@ -266,57 +272,170 @@ export default function Home() {
               alt="logo"
             />
             <div className="flex justify-between py-5 border-b border-opacity-80">
-              <p className="text-sm text-Primary text-white opacity-80tracking-widest">
+              <p className="text-base text-Primary text-white opacity-80tracking-widest">
                 RESOURCE
               </p>
-              <p className="text-sm text-white opacity-80tracking-widest">
+              <p className="text-base text-white opacity-80tracking-widest">
                 JANUARY 14, 2021
               </p>
             </div>
             <div>
-              <h1 className="text-white text-xl opacity-90 py-3">
+              <h1 className="text-white text-lg tracking-widest opacity-90 py-5">
                 8 TIPS IN CHOOSING THE RIGHT LAW FIRM FOR YOUR CASE AND NEEDS
               </h1>
-              <p className="text-lg text-white opacity-80">
+              <p className="text-base text-white opacity-80">
                 {" "}
                 Lorem ipsum dolor sit amet,cmsectectur asipsicing elit, Purus
                 gravida in ipsu in quia Metus ametet risus platea
               </p>
-              <button className="border-b-2 text-sm text-white mt-3 pb-1">
+              <button className="border-b-2 text-base text-white mt-5 pb-1">
                 READ MORE
               </button>
             </div>
           </div>
-          <div className="mt-12">
+          <div className="mt-14">
             <img
               className="h-64 w-full object-cover"
               src="/assets/img3.jpg"
               alt="logo"
             />
             <div className="flex justify-between py-5 border-b border-opacity-80">
-              <p className="text-sm text-Primary text-white opacity-80tracking-widest">
+              <p className="text-base text-Primary text-white opacity-80tracking-widest">
                 RESOURCE
               </p>
-              <p className="text-sm text-white opacity-80tracking-widest">
+              <p className="text-base text-white opacity-80tracking-widest">
                 JANUARY 14, 2021
               </p>
             </div>
             <div>
-              <h1 className="text-white text-xl opacity-90 py-3">
+              <h1 className="text-white text-lg tracking-widest opacity-90 py-5">
                 8 TIPS IN CHOOSING THE RIGHT LAW FIRM FOR YOUR CASE AND NEEDS
               </h1>
-              <p className="text-lg text-white opacity-80">
+              <p className="text-base text-white opacity-80">
                 {" "}
                 Lorem ipsum dolor sit amet,cmsectectur asipsicing elit, Purus
                 gravida in ipsu in quia Metus ametet risus platea
               </p>
-              <button className="border-b-2 text-sm text-white mt-3 pb-1">
+              <button className="border-b-2 text-base text-white mt-5 pb-1">
                 READ MORE
               </button>
             </div>
-          </div>++
+          </div>
         </div>
         {/* end of resources */}
+
+        {/* start of testimonials section */}
+        <div className="bg-Neutral-200 pt-20 pb-20 px-3">
+          <div>
+            <h3 className="text-lg carter ml-10  relative text-black opacity-80 tracking-widest">
+              TESTIMONIALS
+            </h3>
+            <h1
+              className="text-2xl pt-2 pb-4 text-black"
+              style={{ fontFamily: "Playfair Display" }}
+            >
+              Hear what our past clients say
+            </h1>
+            <p className="text-base text-black opacity-70">
+              {" "}
+              Lorem ipsum dolor sit amet,cmsectectur asipsicing elit, Purus
+              gravida in ipsu in quia Metus ametet risus platea
+            </p>
+            <button className="w-full mt-5 p-4 text-base border bg-Primary text-white ">
+              CONTACT ME
+            </button>
+          </div>
+          <div className="bg-white shadow-2xl mt-7 flex flex-col  px-5 py-10">
+            <p className="text-base ml-5 w-full pr-10 tracking-wide relative  text-black opacity-80">
+              {" "}
+              "Lorem ipsum dolor sit amet,cmsectectur asipsicing elit, Purus
+              gravida in ipsu in quia Metus ametet risus platea Lorem ipsum
+              gravida in ipsu in quia Metus ametet risus platea Lorem ipsum
+              gravida in ipsu in quia Metus ametet risus platea Lorem ipsum"
+              <div className="absolute -left-5  bg-Primary w-0.5 h-full top-0"></div>
+            </p>
+            <div className="flex items-center pt-8 py-4 ml-3">
+              <figure>
+                <img
+                  className="w-20 h-20 rounded-full"
+                  src="/assets/avatar.jpg"
+                  alt="avatar"
+                />
+              </figure>
+              <div className="ml-4">
+                <h2 className="text-base tracking-wider">ANDREW MOORE</h2>
+                <h2 className="text-base tracking-wider text-Primary">
+                  CEO AT FIRST VENTURES
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* end of testimonials section */}
+
+        {/* start of lawyer section */}
+        <div className="bg-Base pt-10 pb-8 border-b border-opacity-40 px-3">
+          <figure>
+            <img src="/assets/navlogo.svg" alt="logo" />
+          </figure>
+          <p className="text-base text-white opacity-80 py-4">
+            Lorem ipsum dolor sit amet, consecter adispicing eeit, Feugiat sed
+            fsmes curseus
+          </p>
+          <h2 className="text-lg mt-5 font-bold text-white tracking-wider">
+            SUBSCRIBE TO MY NEWSLETTER
+          </h2>
+          <button className="text-white opacity-80 p-5 text-left text-base my-3 w-full border tracking-wide">
+            WHAT'S YOUR EMAIL?
+          </button>
+          <button className="text-white bg-Primary p-5 text-base w-full ">
+            SUBSCRIBE
+          </button>
+        </div>
+        {/* end of lawyer section */}
+        <div className="pt-10 px-3">
+          <div>
+            <h1 className="text-white tracking-widest mb-4 text-lg">MENU</h1>
+            <ul className="text-white tracking-widest text-base opacity-70">
+              <li className="mb-2">HOME</li>
+              <li className="mb-2">ABOUT</li>
+              <li className="mb-2">CONTACT</li>
+              <li className="mb-2">BLOG</li>
+              <li className="mb-2">BLOG POST</li>
+              <li className="mb-2">PACKAGES</li>
+              <li className="mb-2">PACKAGES SINGLE</li>
+              <li className="mb-2">CASE RESULTS</li>
+              <li className="mb-2">SINGLEESULTS</li>
+              <li className="mb-2">PRACTICE AREAS</li>
+            </ul>
+          </div>
+          <div className="mt-10">
+            <h1 className="text-white tracking-widest mb-4 text-lg">
+              UTILITY PAGES
+            </h1>
+            <ul className="text-white  text-base tracking-widest opacity-70">
+              <li className="mb-2">START HERE</li>
+              <li className="mb-2">STYLE GUIDE</li>
+              <li className="mb-2">404 NOT FOUND</li>
+              <li className="mb-2"> PASSWORD PROTECTED</li>
+              <li className="mb-2">LICENSES</li>
+              <li className="mb-2">CHANGELOG</li>
+            </ul>
+          </div>
+          <div className="mt-10">
+            <h1 className="text-white tracking-widest mb-4  text-lg">
+              CONTACT
+            </h1>
+            <ul className="text-white text-base tracking-widest opacity-70">
+              <li className="mb-2">CONTACT@LAWYER.COM</li>
+              <li className="mb-2">(487) 806 - 7204</li>
+              <li className="mb-2">
+                {" "}
+                FINANCIAL DISTRICT, NEW YORK, NY 10006, USA
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
