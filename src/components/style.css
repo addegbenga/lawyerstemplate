@@ -1,0 +1,10 @@
+.carter::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: -35px;
+  top: 50%;
+  width: 27px;
+  background: #dfae4f;
+}
+
