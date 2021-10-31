@@ -66,24 +66,24 @@ export default function Home() {
       <div>
         {/* hero section starting */}
         <div className=" px-3">
-          <p className="text-sm carter ml-10  relative text-white mt-7 tracking-widest">
+          <h3 className="text-lg carter ml-10  relative text-white mt-9 tracking-widest">
             JOHN CARTER
-          </p>
+          </h3>
           <h1
-            className="text-3xl  py-4 pb-5 text-white"
+            className="text-4xl  py-4 pb-5 text-white"
             style={{ fontFamily: "Playfair Display" }}
           >
             The #1 Lawyer in Los Angeles, CA
           </h1>
-          <p className="text-sm text-Neutral-500 pr-7 tracking-wide">
+          <p className="text-lg text-white opacity-80 pr-7 tracking-wide">
             Lorem ipsum dolor sit omet, consectetur adipiscing elit. Vitae
             aenean tincidant pretium quam id. Massa
           </p>
           <div className="flex flex-col mt-6">
-            <button className="bg-Primary text-white text-sm p-3">
+            <button className="bg-Primary text-white text-sm p-5">
               CONTACT ME
             </button>
-            <button className="p-3 border  text-white text-sm mt-3">
+            <button className="p-5 border  text-white text-sm mt-3">
               CASE RESULTS
             </button>
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
         {/* hero section ending */}
         {/* awards section starting */}
         <div className="bg-white px-3 pt-32 pb-14 -mt-20">
-          <h1 className="text-Neutral-800 text-lg tracking-wider mb-4">
+          <h1 className="text-Neutral-800 text-xl tracking-wider mb-4">
             AWARDS &<br /> RECOGNITIONS
           </h1>
           <div className="flex justify-between">
@@ -108,26 +108,26 @@ export default function Home() {
 
         {/* practice area section starting */}
         <div className="px-3">
-          <p className="text-sm carter ml-10  relative text-white mt-14 tracking-widest">
+          <p className="text-lg carter ml-10  relative text-white mt-14 tracking-widest">
             PRACTICE AREAS
           </p>
           <h1
-            className="text-2xl mt-2 pb-5 text-white"
+            className="text-3xl mt-2 pb-5 text-white"
             style={{ fontFamily: "Playfair Display" }}
           >
             A range of Practice Areas
           </h1>
-          <button className="bg-Primary  w-full text-white text-sm p-3">
+          <button className="bg-Primary  w-full text-white text-sm p-4">
             CONTACT ME
           </button>
-          <div className="grid gap-14 mt-20 ">
+          <div className="grid gap-12 mt-20 ">
             {data.map((item, i) => (
-              <div key={i} className="border-b pb-5 ">
-                <img className="mb-4" src={item.logo} alt="logo" />
+              <div key={i} className="border-b border-opacity-40 pb-12 ">
+                <img className="mb-8" src={item.logo} alt="logo" />
                 <h1 className="text-white tracking-wide text-lg">
                   {item.title}
                 </h1>
-                <p className="text-sm text-white tracking-wider opacity-80">
+                <p className="text-base mt-2 text-white tracking-wider opacity-80">
                   {item.details}
                 </p>
               </div>
@@ -138,34 +138,34 @@ export default function Home() {
 
         {/* about area section starting */}
         <div className="bg-white pb-20 px-3 pt-5">
-          <div className="border-b pb-4">
-            <p className="text-sm carter ml-10  relative text-Neutral-800 mt-14 tracking-widest">
+          <div className="border-b pb-8">
+            <h2 className="text-lg carter ml-10  relative opacity-80 mt-14 tracking-widest">
               ABOUT JOHN CARTER
-            </p>
+            </h2>
             <h1
-              className="text-xl  py-4 pb-5 text-Neutral-800"
+              className="text-3xl  py-4 pb-5 opacity-80"
               style={{ fontFamily: "Playfair Display" }}
             >
               A professional lawyer ready to assist you
             </h1>
-            <p className="text-sm tracking-wide opacity-80">
+            <p className="text-base tracking-wide opacity-80">
               Lorem ipsum dolor sit amet, consectetur adipicint elit, justo,
               euidemd frlsi, eros mi puris ins est. Vitae sodales tellu vitae,
               tincidat in sed orci. Blandit parin posure dui vitae, Nisi in in
               nam vivera librrta. Tincidubt viverra congue marbi ut fermentr id
             </p>
           </div>
-          <div className="pt-4">
-            <div className="flex items-end">
+          <div className="pt-4 pb-5">
+            <div className="flex py-4 items-end">
               <img src="/assets/signature.svg" alt="sig" />
               <div className="ml-4 mb-2">
-                <p className="text-sm text-Neutral-800 tracking-widest">
+                <p className="text-lg text-black opacity-80 tracking-widest">
                   JOHN CARTER
                 </p>
-                <p className="text-sm text-Primary">FOUNDER OF LAWYER</p>
+                <p className="text-sm tracking-widest text-Primary">FOUNDER OF LAWYER</p>
               </div>
             </div>
-            <div className="mt-14 img-overlay relative z-10">
+            <div className="mt-10 img-overlay relative z-10">
               <div className="absolute h-full bg-Primary w-11/12"></div>
               <img
                 className="w-11/12 ml-auto relative top-5 "
@@ -177,24 +177,24 @@ export default function Home() {
         </div>
         {/* about area section end */}
         {/* free consultation area section starting */}
-        <div className="px-3 mt-8 pb-14">
+        <div className="px-3 mt-8 pb-20">
           <h1
-            className="text-xl  py-4 pb-5 text-white opacity-90"
+            className="text-2xl  py-4 pb-5 text-white opacity-95"
             style={{ fontFamily: "Playfair Display" }}
           >
             {" "}
             Get a Free Consultation
           </h1>
-          <p className="text-sm text-white opacity-80">
+          <p className="text-base w-11/12 text-white opacity-70">
             {" "}
             euidemd frlsi, eros mi puris ins est. Vitae sodales tellu vitae,
             tincidat in sed orci. Blandit parin posure dui vitae, Nisi in in
           </p>
           <div className="flex flex-col mt-6">
-            <button className="bg-Primary text-white text-sm p-3">
+            <button className="bg-Primary text-white text-sm p-5">
               CONTACT ME
             </button>
-            <button className="p-3 border  text-white text-sm mt-3">
+            <button className="p-5 border  text-white text-sm mt-4">
               CASE RESULTS
             </button>
           </div>
@@ -204,16 +204,16 @@ export default function Home() {
         {/* case results section start */}
         <div className="bg-white px-3 pt-6">
           <div className="pb-10">
-            <p className="text-sm carter ml-10  relative text-Neutral-800 mt-14 tracking-widest">
+            <p className="text-xl carter ml-10  relative text-Neutral-800 mt-14 tracking-widest">
               CASE RESULTS
             </p>
             <h1
-              className="text-xl pr-20  py-4 pb-5 text-Neutral-800"
+              className="text-2xl pr-20  py-4 pb-5 "
               style={{ fontFamily: "Playfair Display" }}
             >
               Great past results for our clients
             </h1>
-            <button className="border w-full border-gray-700 text-sm p-3">
+            <button className="border w-full border-gray-700 text-sm p-4">
               BROWSE CASE RESULTS
             </button>
           </div>
@@ -221,19 +221,19 @@ export default function Home() {
             {data2.map((item) => (
               <div key={Math.random() * 100}>
                 <img src="/assets/img2.jpg" alt="logo" />
-                <div className="px-3 pb-6 pt-4 shadow-lg -top-10 bg-white relative z-10 w-11/12">
+                <div className="px-3 pb-8 mb-8 pt-4 shadow-lg -top-10 bg-white relative z-10 w-11/12">
                   <p className="text-lg carter ml-10  relative text-Primary tracking-widest">
                     $46,000,000
                   </p>
-                  <h1 className="text-lg py-2 text-Neutral-800">
+                  <h1 className="text-xl py-2 text-Neutral-800">
                     CORPORATE & COMPLIANCE
                   </h1>
-                  <p className="text-sm opacity-80">
+                  <p className="text-lg opacity-80">
                     Lorem ipsum dolor sit amet,cmsectectur asipsicing elit,
                     Purus gravida in ipsu in quia Metus ametet risus platea
                   </p>
 
-                  <button className="mt-4 border-gray-800 pb-1 text-sm text-Neutral-800 border-b">
+                  <button className="mt-4 border-gray-800 pb-1 text-sm text-black opacity-80 border-b-2">
                     READ MORE
                   </button>
                 </div>
@@ -246,26 +246,26 @@ export default function Home() {
         {/* start of resources */}
         <div className="px-3 pb-20">
           <div>
-            <p className="text-sm carter ml-10  relative text-white opacity-80 mt-14 tracking-widest">
+            <p className="text-xl carter ml-10  relative text-white opacity-80 mt-14 tracking-widest">
               RESOURCES
             </p>
             <h1
-              className="text-xl  py-4 pb-5 text-white"
+              className="text-2xl  py-4 pb-5 text-white"
               style={{ fontFamily: "Playfair Display" }}
             >
               Browse our Resource Center
             </h1>
-            <button className="w-full p-3 text-sm border border-gray-100 text-white opacity-80">
+            <button className="w-full p-4 text-sm border border-gray-100 text-white opacity-80">
               ALL ARTICLES
             </button>
           </div>
-          <div className="mt-10">
+          <div className="mt-12">
             <img
               className="h-64 w-full object-cover"
               src="/assets/img3.jpg"
               alt="logo"
             />
-            <div className="flex justify-between py-4 border-b border-opacity-80">
+            <div className="flex justify-between py-5 border-b border-opacity-80">
               <p className="text-sm text-Primary text-white opacity-80tracking-widest">
                 RESOURCE
               </p>
@@ -274,26 +274,26 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h1 className="text-white text-lg opacity-90 py-3">
+              <h1 className="text-white text-xl opacity-90 py-3">
                 8 TIPS IN CHOOSING THE RIGHT LAW FIRM FOR YOUR CASE AND NEEDS
               </h1>
-              <p className="text-sm text-white opacity-80">
+              <p className="text-lg text-white opacity-80">
                 {" "}
                 Lorem ipsum dolor sit amet,cmsectectur asipsicing elit, Purus
                 gravida in ipsu in quia Metus ametet risus platea
               </p>
-              <button className="border-b text-sm text-white mt-3 pb-1">
+              <button className="border-b-2 text-sm text-white mt-3 pb-1">
                 READ MORE
               </button>
             </div>
           </div>
-          <div className="mt-10">
+          <div className="mt-12">
             <img
               className="h-64 w-full object-cover"
               src="/assets/img3.jpg"
               alt="logo"
             />
-            <div className="flex justify-between py-4 border-b border-opacity-80">
+            <div className="flex justify-between py-5 border-b border-opacity-80">
               <p className="text-sm text-Primary text-white opacity-80tracking-widest">
                 RESOURCE
               </p>
@@ -302,19 +302,19 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h1 className="text-white text-lg opacity-90 py-3">
+              <h1 className="text-white text-xl opacity-90 py-3">
                 8 TIPS IN CHOOSING THE RIGHT LAW FIRM FOR YOUR CASE AND NEEDS
               </h1>
-              <p className="text-sm text-white opacity-80">
+              <p className="text-lg text-white opacity-80">
                 {" "}
                 Lorem ipsum dolor sit amet,cmsectectur asipsicing elit, Purus
                 gravida in ipsu in quia Metus ametet risus platea
               </p>
-              <button className="border-b text-sm text-white mt-3 pb-1">
+              <button className="border-b-2 text-sm text-white mt-3 pb-1">
                 READ MORE
               </button>
             </div>
-          </div>
+          </div>++
         </div>
         {/* end of resources */}
       </div>
