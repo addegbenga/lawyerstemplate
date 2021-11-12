@@ -8,7 +8,19 @@
 
 * {
   font-family: 'Mulish', sans-serif;
+  cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
+::selection { background: transparent; }
+::-moz-selection { background: transparent; }
+
 
 h1{
   font-size: 1.172em;
