@@ -22,7 +22,7 @@ export default function Navbar() {
               <div className="w-7 h-0.5 bg-white"></div>
             </div>
           </button>
-          <button className="text-base hidden lg:block md:py-3.5 md:ml-4 px-8 lg:bg-Primary text-white">
+          <button className="text-base transition duration-500 ease-in-out transform hover:scale-95  hidden lg:block md:py-3.5 md:ml-4 px-8 lg:bg-Primary text-white">
             CONTACT ME
           </button>
         </div>

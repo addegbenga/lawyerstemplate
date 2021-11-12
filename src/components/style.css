@@ -8,3 +8,19 @@
   background: #dfae4f;
 }
 
+.consultation-bg {
+  background: url("./img/coil.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.home-hero {
+
+  background-color: #1e2027;
+  background: url("./img/herobg.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}

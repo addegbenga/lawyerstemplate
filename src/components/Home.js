@@ -71,34 +71,36 @@ export default function Home() {
     <div className="bg-Base">
       <div>
         {/* hero section starting */}
-        <div className=" px-3 xl:flex lg:w-1/10 xl:mt-16 xl:m-auto xl:justify-between">
-          <div className="xl:mt-14 lg:w-hero-width-bg  ">
-            <h3 className="text-xl carter ml-10  relative text-white mt-9 tracking-widest">
-              JOHN CARTER
-            </h3>
-            <h1
-              className="text-4xl xl:pr-20 xl:mt-8 xl:leading-12 xl:text-large  py-4 pb-5 text-white"
-              style={{ fontFamily: "Playfair Display" }}
-            >
-              The #1 Lawyer in Los Angeles, CA
-            </h1>
-            <p className="text-lg xl:mt-6  text-white opacity-80 pr-7 tracking-wide">
-              Lorem ipsum dolor sit omet, consectetur adipiscing elit. Vitae
-              aenean tincidant pretium quam id. Massa tincidant pretium quam id.
-              Massa
-            </p>
-            <div className="flex xl:grid xl:grid-cols-2 xl:gap-5 xl:w-3/4  flex-col mt-6 xl:mt-10 xl:flex-row ">
-              <button className="bg-Primary xl:w-full text-white text-base p-5">
-                CONTACT ME
-              </button>
-              <button className="p-5 border  xl:w-full  text-white text-base xl:mt-0 mt-3">
-                CASE RESULTS
-              </button>
+        <div className="home-hero ">
+          <div className="  px-3 xl:flex lg:w-1/10 xl:mt-16 xl:m-auto xl:justify-between">
+            <div className="xl:mt-14 lg:w-hero-width-bg  ">
+              <h3 className="text-xl carter ml-10  relative text-white mt-9 tracking-widest">
+                JOHN CARTER
+              </h3>
+              <h1
+                className="text-4xl xl:pr-20 xl:mt-8 xl:leading-12 xl:text-large  py-4 pb-5 text-white"
+                style={{ fontFamily: "Playfair Display" }}
+              >
+                The #1 Lawyer in Los Angeles, CA
+              </h1>
+              <p className="text-lg xl:mt-6  text-white opacity-80 pr-7 tracking-wide">
+                Lorem ipsum dolor sit omet, consectetur adipiscing elit. Vitae
+                aenean tincidant pretium quam id. Massa tincidant pretium quam
+                id. Massa
+              </p>
+              <div className="flex xl:grid xl:grid-cols-2 xl:gap-5 xl:w-3/4  flex-col mt-6 xl:mt-10 xl:flex-row ">
+                <button className="bg-Primary transition duration-500 ease-in-out transform hover:scale-95  xl:w-full text-white text-base p-7">
+                  CONTACT ME
+                </button>
+                <button className="p-5 border transition duration-500 ease-in-out transform hover:scale-95 hover:bg-Primary hover:border-opacity-0  xl:w-full  text-white text-base xl:mt-0 mt-3">
+                  CASE RESULTS
+                </button>
+              </div>
             </div>
-          </div>
 
-          <div className="mt-8 xl:mt-16  ">
-            <img src="/assets/lawyerPicture.jpeg" alt="lawyer" />
+            <div className="mt-8 xl:mt-16  ">
+              <img src="/assets/lawyerPicture.jpeg" alt="lawyer" />
+            </div>
           </div>
         </div>
         {/* hero section ending */}
@@ -149,7 +151,7 @@ export default function Home() {
               </h1>
             </div>
 
-            <button className="bg-Primary lg:mt-8 w-full lg:w-44 lg:py-6  text-white text-sm p-4">
+            <button className="bg-Primary transition duration-500 ease-in-out transform hover:scale-95  lg:mt-8 w-full lg:w-44 lg:py-6  text-white text-sm p-4">
               CONTACT ME
             </button>
           </div>
@@ -222,28 +224,30 @@ export default function Home() {
         </div>
         {/* about area section end */}
         {/* free consultation area section starting */}
-        <div className="px-3 pt-6 mt-8 lg:pt-28 lg:pb-28 pb-20 lg:w-1/10 lg:m-auto">
-          <div className="lg:w-1/2">
-            <h1
-              className="text-2xl lg:text-4xl relative  py-4 pb-5 text-white opacity-95"
-              style={{ fontFamily: "Playfair Display" }}
-            >
-              {" "}
-              Get a Free Consultation
-              <div className="absolute top-0 bg-Primary w-24 h-0.5"></div>
-            </h1>
-            <p className="text-base w-11/12 text-white opacity-70">
-              {" "}
-              euidemd frlsi, eros mi puris ins est. Vitae sodales tellu vitae,
-              tincidat in sed orci. Blandit parin posure dui vitae, Nisi in in
-            </p>
-            <div className="flex flex-col mt-6 lg:flex-row">
-              <button className="bg-Primary  lg:px-12  lg:mr-8  text-white text-sm p-5">
-                CONTACT ME
-              </button>
-              <button className="p-5 border lg:px-12 text-white text-sm mt-4 lg:mt-0">
-                CASE RESULTS
-              </button>
+        <div className="consultation-bg">
+          <div className="px-3 pt-6  mt-8 lg:pt-28 lg:pb-28 pb-20 lg:w-1/10 lg:m-auto">
+            <div className="lg:w-1/2">
+              <h1
+                className="text-2xl lg:text-4xl relative  py-4 pb-5 text-white opacity-95"
+                style={{ fontFamily: "Playfair Display" }}
+              >
+                {" "}
+                Get a Free Consultation
+                <div className="absolute top-0 bg-Primary w-24 h-0.5"></div>
+              </h1>
+              <p className="text-base w-11/12 text-white opacity-70">
+                {" "}
+                euidemd frlsi, eros mi puris ins est. Vitae sodales tellu vitae,
+                tincidat in sed orci. Blandit parin posure dui vitae, Nisi in in
+              </p>
+              <div className="flex flex-col mt-6 lg:flex-row">
+                <button className="bg-Primary transition duration-500 ease-in-out transform hover:scale-95  lg:px-12  lg:mr-8  text-white text-sm p-6">
+                  CONTACT ME
+                </button>
+                <button className="p-6 transition duration-500 ease-in-out transform hover:scale-95 hover:bg-Primary hover:border-opacity-0 border lg:px-12 text-white text-sm mt-4 lg:mt-0">
+                  CASE RESULTS
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -265,15 +269,21 @@ export default function Home() {
                 </h1>
               </div>
 
-              <button className="border lg:mt-8 lg:w-64 w-full tracking-wider border-gray-700 text-base p-5">
+              <button className="border transition duration-500 ease-in-out transform hover:scale-95 hover:bg-Primary hover:border-opacity-0 hover:text-white border  lg:mt-8 lg:w-64 w-full tracking-wider border-gray-700 text-base p-5">
                 BROWSE CASE RESULTS
               </button>
             </div>
             <div className="pb-8 lg:grid lg:grid-cols-2 lg:gap-10">
               {data2.map((item) => (
-                <div key={Math.random() * 100}>
-                  <img src="/assets/img2.jpg" alt="logo" />
-                  <div className="px-3 w-img-card-width lg:w-img-card-width-lg pb-8 lg:p-10 mb-4 pt-4 shadow-2xl -top-10 bg-white relative z-10 ">
+                <div key={Math.random() * 100} className="cursor-pointer group">
+                  <div className=" overflow-hidden">
+                    <img
+                      src="/assets/img2.jpg"
+                      className="group-hover:scale-110  transform transition ease-in-out duration-500"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="px-3 group-hover:-translate-y-6 transform transition duration-500 ease-in-out w-img-card-width lg:w-img-card-width-lg pb-8 lg:p-10 mb-4 pt-4 shadow-2xl -top-10 bg-white relative z-10 ">
                     <p className="text-lg carter ml-10  relative text-Primary tracking-widest">
                       $46,000,000
                     </p>
@@ -285,7 +295,7 @@ export default function Home() {
                       Purus gravida in ipsu in quia Metus ametet risus platea
                     </p>
 
-                    <button className="mt-4 tracking-wider border-gray-800 pb-1 text-base text-black opacity-90 border-b">
+                    <button className="mt-4 transition duration-500 ease-in-out group-hover:border-Primary group-hover:text-Primary tracking-wider border-gray-800 pb-1 text-base text-black opacity-90 border-b">
                       READ MORE
                     </button>
                   </div>
@@ -312,18 +322,21 @@ export default function Home() {
                 </h1>
               </div>
 
-              <button className="w-full lg:mt-2 lg:w-64 p-5 text-base border border-gray-100 text-white opacity-80">
+              <button className="w-full p-6 transition duration-500 ease-in-out transform hover:scale-95 hover:bg-Primary hover:border-opacity-0 lg:mt-2 lg:w-64  text-base border border-gray-100 text-white opacity-80">
                 ALL ARTICLES
               </button>
             </div>
             <div className="lg:grid lg:grid-cols-2 lg:gap-10">
-              <div className="mt-12 lg:mt-0">
-                <img
-                  className="h-64 w-full object-cover"
-                  src="/assets/img3.jpg"
-                  alt="logo"
-                />
-                <div className="flex justify-between py-5 border-b border-opacity-80">
+              <div className="mt-12 lg:mt-0 group overflow-hidden">
+                <div className="overflow-hidden">
+                  <img
+                    className="h-80 w-full object-cover group-hover:scale-110  transform transition ease-in-out duration-500"
+                    src="/assets/img3.jpg"
+                    alt="logo"
+                  />
+                </div>
+
+                <div className="flex justify-between py-7 border-b border-opacity-80">
                   <p className="text-base text-Primary text-white opacity-80tracking-widest">
                     RESOURCE
                   </p>
@@ -332,7 +345,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div>
-                  <h1 className="text-white text-lg tracking-widest opacity-90 py-5">
+                  <h1 className="text-white text-lg group-hover:text-Primary transition duration-500 ease-in-out tracking-widest opacity-90 py-5">
                     8 TIPS IN CHOOSING THE RIGHT LAW FIRM FOR YOUR CASE AND
                     NEEDS
                   </h1>
@@ -341,18 +354,20 @@ export default function Home() {
                     Lorem ipsum dolor sit amet,cmsectectur asipsicing elit,
                     Purus gravida in ipsu in quia Metus ametet risus platea
                   </p>
-                  <button className="border-b-2 text-base text-white mt-5 pb-1">
+                  <button className="border-b-2 group-hover:text-Primary transition duration-500 ease-in-out group-hover:border-Primary text-base text-white mt-5 pb-1">
                     READ MORE
                   </button>
                 </div>
               </div>
-              <div className="mt-14 lg:mt-0">
-                <img
-                  className="h-64 w-full object-cover"
-                  src="/assets/img3.jpg"
-                  alt="logo"
-                />
-                <div className="flex justify-between py-5 border-b border-opacity-80">
+              <div className="mt-14 lg:mt-0 group">
+                <div className="overflow-hidden">
+                  <img
+                    className="h-80 w-full object-cover group-hover:scale-110  transform transition ease-in-out duration-500"
+                    src="/assets/img3.jpg"
+                    alt="logo"
+                  />
+                </div>
+                <div className="flex justify-between py-7 border-b border-opacity-80">
                   <p className="text-base text-Primary text-white opacity-80tracking-widest">
                     RESOURCE
                   </p>
@@ -361,7 +376,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div>
-                  <h1 className="text-white text-lg tracking-widest opacity-90 py-5">
+                  <h1 className="text-white group-hover:text-Primary transition duration-500 ease-in-out text-lg tracking-widest opacity-90 py-5">
                     8 TIPS IN CHOOSING THE RIGHT LAW FIRM FOR YOUR CASE AND
                     NEEDS
                   </h1>
@@ -370,7 +385,7 @@ export default function Home() {
                     Lorem ipsum dolor sit amet,cmsectectur asipsicing elit,
                     Purus gravida in ipsu in quia Metus ametet risus platea
                   </p>
-                  <button className="border-b-2 text-base text-white mt-5 pb-1">
+                  <button className="border-b-2 group-hover:text-Primary transition duration-500 ease-in-out group-hover:border-Primary  text-base text-white mt-5 pb-1">
                     READ MORE
                   </button>
                 </div>
@@ -398,7 +413,7 @@ export default function Home() {
                 Lorem ipsum dolor sit amet,cmsectectur asipsicing elit, Purus
                 gravida in ipsu in quia Metus ametet risus platea
               </p>
-              <button className="w-full mt-5 p-4 text-base border bg-Primary text-white ">
+              <button className="w-full  transition duration-500 ease-in-out transform hover:scale-95  mt-5 p-6 text-base border bg-Primary text-white ">
                 CONTACT ME
               </button>
             </div>
@@ -456,7 +471,7 @@ export default function Home() {
                   type="text"
                   placeholder="WHAT'S YOUR EMAIL?"
                 />
-                <button className="text-white  lg:mr-3 lg:w-2/5  bg-Primary p-5  lg:p-1 lg:py-3 text-base w-full ">
+                <button className="text-white transition duration-500 ease-in-out transform hover:scale-95   lg:mr-3 lg:w-2/5  bg-Primary p-5  lg:p-1 lg:py-3 text-base w-full ">
                   SUBSCRIBE
                 </button>
               </div>
@@ -465,20 +480,20 @@ export default function Home() {
         </div>
         {/* end of lawyer section */}
         <div className="pt-12 px-3 lg:py-32 border-b pb-14 border-opacity-40">
-          <div className="lg:w-1/10   lg:m-auto lg:flex lg:justify-between">
+          <div className="lg:w-1/10 cursor-pointer   lg:m-auto lg:flex lg:justify-between">
             <div>
               <h1 className="text-white tracking-widest mb-4 text-lg">MENU</h1>
               <ul className="text-white tracking-widest text-sm opacity-70">
-                <li className="mb-3">HOME</li>
-                <li className="mb-3">ABOUT</li>
-                <li className="mb-3">CONTACT</li>
-                <li className="mb-3">BLOG</li>
-                <li className="mb-3">BLOG POST</li>
-                <li className="mb-3">PACKAGES</li>
-                <li className="mb-3">PACKAGES SINGLE</li>
-                <li className="mb-3">CASE RESULTS</li>
-                <li className="mb-3">SINGLEESULTS</li>
-                <li className="mb-3">PRACTICE AREAS</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">HOME</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">ABOUT</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">CONTACT</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">BLOG</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">BLOG POST</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">PACKAGES</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">PACKAGES SINGLE</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">CASE RESULTS</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">SINGLEESULTS</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">PRACTICE AREAS</li>
               </ul>
             </div>
             <div className="mt-14 lg:mt-0">
@@ -486,12 +501,12 @@ export default function Home() {
                 UTILITY PAGES
               </h1>
               <ul className="text-white  text-sm tracking-widest opacity-70">
-                <li className="mb-3">START HERE</li>
-                <li className="mb-3">STYLE GUIDE</li>
-                <li className="mb-3">404 NOT FOUND</li>
-                <li className="mb-3"> PASSWORD PROTECTED</li>
-                <li className="mb-3">LICENSES</li>
-                <li className="mb-3">CHANGELOG</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">START HERE</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">STYLE GUIDE</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">404 NOT FOUND</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out"> PASSWORD PROTECTED</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">LICENSES</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">CHANGELOG</li>
               </ul>
             </div>
             <div className="mt-14  lg:mt-0">
@@ -499,9 +514,9 @@ export default function Home() {
                 CONTACT
               </h1>
               <ul className="text-white text-sm tracking-widest opacity-70">
-                <li className="mb-3">CONTACT@LAWYER.COM</li>
-                <li className="mb-3">(487) 806 - 7204</li>
-                <li className="mb-3 pr-10">
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">CONTACT@LAWYER.COM</li>
+                <li className="mb-3 hover:text-Primary transition duration-500 ease-in-out">(487) 806 - 7204</li>
+                <li className="mb-3 pr-10 hover:text-Primary transition duration-500 ease-in-out">
                   {" "}
                   FINANCIAL DISTRICT, NEW YORK, NY 10006, USA
                 </li>
@@ -513,13 +528,13 @@ export default function Home() {
         {/* start of footer section */}
         <div className="pt-5 pb-5 px-3">
           <div className="lg:flex lg:w-1/10 lg:m-auto lg:justify-between lg:items-center">
-            <div className="text-white text-xl  py-5 lg:w-1/5  w-2/4 justify-between flex opacity-60">
-              <FaFacebookF />
-              <AiOutlineTwitter />
-              <AiOutlineInstagram />
-              <FaLinkedinIn />
-              <AiFillYoutube />
-              <FaTelegramPlane />
+            <div className="text-white text-xl cursor-pointer  py-5 lg:w-1/5  w-2/4 justify-between flex opacity-60">
+              <FaFacebookF className="transition  duration-500 ease-in-out hover:-translate-y-1 transform hover:text-Primary" />
+              <AiOutlineTwitter className="transition duration-500 ease-in-out hover:-translate-y-1 transform hover:text-Primary" />
+              <AiOutlineInstagram className="transition duration-500 ease-in-out hover:-translate-y-1 transform hover:text-Primary" />
+              <FaLinkedinIn className="transition duration-500 ease-in-out hover:-translate-y-1 transform hover:text-Primary" />
+              <AiFillYoutube className="transition duration-500 ease-in-out hover:-translate-y-1 transform hover:text-Primary" />
+              <FaTelegramPlane className="transition duration-500 ease-in-out hover:-translate-y-1 transform hover:text-Primary" />
             </div>
             <p className="text-xs lead-10 tracking-wider  text-white opacity-80">
               COPYRIGHT &copy; LAWYER | DESIGNED BY{" "}

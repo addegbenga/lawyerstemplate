@@ -18,9 +18,9 @@ module.exports = {
       },
       width: {
         "1/10": "87%",
-        'hero-width-bg':"790px",
-        "img-card-width":"97%",
-        "img-card-width-lg":"95%",
+        "hero-width-bg": "790px",
+        "img-card-width": "97%",
+        "img-card-width-lg": "95%",
       },
       fontSize: {
         large: "64px",
@@ -30,6 +30,11 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      scale: ["group-hover"],
+      translate: ["group-hover"],
+    },
+  },
   plugins: [],
 };
